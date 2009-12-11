@@ -196,7 +196,7 @@
 
 ;; utilities
 (defun make-low-level-lisp-name (lisp-name)
-  (symbolicate "%" lisp-name))
+  (intern (concatenate 'string "%" (symbol-name lisp-name))))
 
 (defun make-fortran-name (foreign-name)
   (concatenate 'string foreign-name "_"))
