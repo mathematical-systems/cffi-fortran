@@ -1,5 +1,5 @@
 (defpackage :cffi-fortran
-    (:use :cl) 
+    (:use :cl :alexandria)
   (:export #:complex-float
 	   #:complex-double
 	   #:defffun
